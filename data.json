@@ -1,0 +1,32 @@
+[
+  {
+    "sku": "TSHIRT-001",
+    "productName": "Ijen Crater T-Shirt",
+    "price":  75000,
+    "isAvailable": true
+  },
+  {
+    "sku": "WEAR-882",
+    "productName": "Gandrung Motion Sensor Fitness Band",
+    "price": 178000,
+    "isAvailable": true
+  },
+  {
+    "sku": "AUDIO-334",
+    "productName": "Red Island Wireless Pocket Speaker",
+    "price": 98000,
+    "isAvailable": false
+  },
+  {
+    "sku": "ACC-129",
+    "productName": "Osing Engraved Stainless Keyholder",
+    "price": 59000,
+    "isAvailable": true
+  },
+  {
+    "sku": "HOME-721",
+    "productName": "Banyuwangi Breeze Aroma Diffuser",
+    "price": 145000,
+    "isAvailable": true
+  }
+]
