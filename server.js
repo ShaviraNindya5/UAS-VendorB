@@ -37,7 +37,10 @@ app.use((req, res) => {
   res.status(404).json({ error: "Route not found" });
 });
 
-const PORT = 3300;
-app.listen(PORT, () => console.log(`Vendor B API running on port ${PORT}`));
+const port = 3300;
+app.listen(port, () => {
+    console.log(`Vendor B API running at http://localhost:${port}`);
+});
+
 
 module.exports = app;
