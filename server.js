@@ -27,8 +27,13 @@ app.get("/", (req, res) => {
   });
 });
 
-// RAW DATA endpoint (INI SAJA YANG DIPAKAI INTEGRATOR)
+// RAW DATA endpoint
 app.get("/api/products", (req, res) => {
+  res.json(vendorData);
+});
+
+// Alias /products ke /api/products
+app.get("/products", (req, res) => {
   res.json(vendorData);
 });
 
@@ -39,8 +44,7 @@ app.use((req, res) => {
 
 const port = 3300;
 app.listen(port, () => {
-    console.log(`Vendor B API running at http://localhost:${port}`);
+  console.log(`Vendor B API running at http://localhost:${port}`);
 });
-
 
 module.exports = app;
