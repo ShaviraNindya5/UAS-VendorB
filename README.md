@@ -1,11 +1,11 @@
-# UAS – Vendor B (Distro Modern) M2
+# UAS – Vendor B (Distro Modern)
 
 ## I. Deskripsi Kasus: “Banyuwangi Marketplace”
 
-Kasus ini mensimulasikan proyek integrasi data untuk aplikasi **Banyuwangi Marketplace**, yaitu dashboard terpusat yang menyajikan data produk UMKM dari berbagai aplikasi kasir.  
-Setiap vendor memiliki struktur data (JSON Schema) yang berbeda, sehingga diperlukan proses parsing dan normalisasi data sebelum dapat digabungkan ke dalam satu format standar.
+Kasus ini mensimulasikan integrasi data untuk aplikasi **Banyuwangi Marketplace**, yaitu dashboard yang mengumpulkan data produk UMKM dari berbagai aplikasi kasir.  
+Setiap vendor memiliki struktur data (JSON Schema) yang berbeda, sehingga diperlukan proses parsing dan normalisasi sebelum data dapat digabungkan ke dalam format standar.
 
-Repository ini berisi implementasi **Vendor B**, salah satu penyedia data yang harus diintegrasikan.
+Repository ini berisi implementasi **Vendor B**, salah satu penyedia data yang digunakan dalam proses integrasi.
 
 ---
 
@@ -13,23 +13,23 @@ Repository ini berisi implementasi **Vendor B**, salah satu penyedia data yang h
 
 Vendor B menggunakan konsep *distro modern* dengan karakteristik:
 
-- Seluruh key JSON menggunakan **CamelCase**
-- Bahasa yang digunakan adalah **Bahasa Inggris**
-- Struktur data lebih menyerupai API e-commerce internasional
-- Memiliki field utama seperti `sku`, `productName`, `price`, dan `isAvailable`
+- Menggunakan **CamelCase** pada setiap key JSON  
+- Menggunakan **Bahasa Inggris**  
+- Struktur JSON rapi dan konsisten  
+- Field utama: `sku`, `productName`, `price`, `isAvailable`
 
 ---
 
 ## III. Struktur Output JSON Vendor B
 
-Data Vendor B yang digunakan dalam project ini sebagai berikut:
+Data JSON Vendor B yang digunakan:
 
 ```json
 [
   {
-    "sku": "TECH-451",
-    "productName": "Ijen BlueFire Smart LED Lamp",
-    "price": 215000,
+    "sku": "TSHIRT-001",
+    "productName": "Ijen Crater T-Shirt",
+    "price": 75000,
     "isAvailable": true
   },
   {
